@@ -1,0 +1,21 @@
+ninja_required_version = 1.3
+cxx = c++
+
+cflags = -pthread -B /home/www/anaconda3/envs/botsort_env/compiler_compat -Wl,--sysroot=/ -Wsign-compare -DNDEBUG -g -fwrapv -O3 -Wall -Wstrict-prototypes -fPIC -I/home/www/code/MOT/BoT-SORT/BoT-SORT-main/yolox/layers/csrc -I/home/www/anaconda3/envs/botsort_env/lib/python3.7/site-packages/torch/include -I/home/www/anaconda3/envs/botsort_env/lib/python3.7/site-packages/torch/include/torch/csrc/api/include -I/home/www/anaconda3/envs/botsort_env/lib/python3.7/site-packages/torch/include/TH -I/home/www/anaconda3/envs/botsort_env/lib/python3.7/site-packages/torch/include/THC -I/home/www/anaconda3/envs/botsort_env/include/python3.7m -c
+post_cflags = -O3 -DTORCH_API_INCLUDE_EXTENSION_H '-DPYBIND11_COMPILER_TYPE="_gcc"' '-DPYBIND11_STDLIB="_libstdcpp"' '-DPYBIND11_BUILD_ABI="_cxxabi1011"' -DTORCH_EXTENSION_NAME=_C -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++14
+ldflags = 
+
+rule compile
+  command = $cxx -MMD -MF $out.d $cflags -c $in -o $out $post_cflags
+  depfile = $out.d
+  deps = gcc
+
+
+
+build /home/www/code/MOT/BoT-SORT/BoT-SORT-main/build/temp.linux-x86_64-cpython-37/home/www/code/MOT/BoT-SORT/BoT-SORT-main/yolox/layers/csrc/cocoeval/cocoeval.o: compile /home/www/code/MOT/BoT-SORT/BoT-SORT-main/yolox/layers/csrc/cocoeval/cocoeval.cpp
+build /home/www/code/MOT/BoT-SORT/BoT-SORT-main/build/temp.linux-x86_64-cpython-37/home/www/code/MOT/BoT-SORT/BoT-SORT-main/yolox/layers/csrc/vision.o: compile /home/www/code/MOT/BoT-SORT/BoT-SORT-main/yolox/layers/csrc/vision.cpp
+
+
+
+
+
