@@ -66,6 +66,11 @@ The code was tested using torch 1.11.0+cu113 and torchvision==0.12.0
 ```shell
 git clone https://github.com/NirAharon/BoT-SORT.git
 cd RoT-SORT
+# 克隆 YOLOX 仓库
+git clone https://github.com/Megvii-BaseDetection/YOLOX.git
+# 克隆 FASTReID 仓库
+git clone https://github.com/JDAI-CV/fastreid.git
+
 pip3 install -r requirements.txt
 python3 setup.py develop
 ```
@@ -109,7 +114,7 @@ Download and store the trained models in 'pretrained' folder as follow:
 
 - Ours trained ReID models can be downloaded from [MOT17-SBS-S50](https://drive.google.com/file/d/1QZFWpoa80rqo7O-HXmlss8J8CnS7IUsN/view?usp=sharing), [MOT20-SBS-S50](https://drive.google.com/file/d/1KqPQyj6MFyftliBHEIER7m_OrGpcrJwi/view?usp=sharing).
 
-- For multi-class MOT use [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX) or [YOLOv7](https://github.com/WongKinYiu/yolov7) trained on COCO (or any custom weights). 
+- For multi-class MOT use [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX)  trained on COCO (or any custom weights). 
 
 ## Training
 
