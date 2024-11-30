@@ -26,12 +26,15 @@ The goal of multi-object tracking (MOT) is detecting and tracking all the object
 
 ### Visualization results on MOT challenge test set
 
-https://youtu.be/O8KNGNFj3FI
 
+![Video]([https://www.youtube.com/watch?v=your-video-id](https://youtu.be/MLiNnFCLwY0))
+
+![Video]([https://www.youtube.com/watch?v=your-video-id](https://youtu.be/O8KNGNFj3FI))
 
 https://youtu.be/MLiNnFCLwY0
+https://youtu.be/MLiNnFCLwY0
 
-
+https://youtu.be/O8KNGNFj3FI
 
 
 
