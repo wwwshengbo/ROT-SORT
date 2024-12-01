@@ -195,7 +195,6 @@ python3 tools/mc_demo.py video --path <path_to_video> -f yolox/exps/example/mot/
 
 A large part of the codes, ideas and results are borrowed from 
 [ByteTrack](https://github.com/ifzhang/ByteTrack), 
-[StrongSORT](https://github.com/dyhBUPT/StrongSORT),
 [FastReID](https://github.com/JDAI-CV/fast-reid),
 [YOLOX](https://github.com/Megvii-BaseDetection/YOLOX)
 Thanks for their excellent work!
