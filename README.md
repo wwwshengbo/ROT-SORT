@@ -65,11 +65,7 @@ The code was tested using torch 1.11.0+cu113 and torchvision==0.12.0
 **Step 3.** Install RoT-SORT.
 ```shell
 git clone https://github.com/NirAharon/BoT-SORT.git
-cd RoT-SORT
-# 克隆 YOLOX 仓库
-git clone https://github.com/Megvii-BaseDetection/YOLOX.git
-# 克隆 FASTReID 仓库
-git clone https://github.com/JDAI-CV/fastreid.git
+
 
 pip3 install -r requirements.txt
 python3 setup.py develop
