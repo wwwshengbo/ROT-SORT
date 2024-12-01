@@ -7,16 +7,11 @@ from tracker import matching
 
 from tracker import other_matching_1
 
-from tracker.gmc import GMC    # 创新点2 使用相机运动补偿 改进 bounding box 预测，他这个相机运动补偿，和 长尾运动补偿有什么区别？？？
+from tracker.gmc import GMC    
 from tracker.basetrack import BaseTrack, TrackState
-from tracker.kalman_filter import KalmanFilter   # 创新点1 该了 KF 滤波算法
+from tracker.kalman_filter import KalmanFilter  
 
-# from tracker.kalman_filter_deepsort import KalmanFilter   # 使用 deepsort 的KF 预测目标轨迹
-
-# from tracker.kalman_filter3 import KalmanFilter  # 添加一个自适应方法，根据置信度值，修改标准差
-
-from fast_reid.fast_reid_interfece import FastReIDInterface  # 创新点 3  加入Re-id 度量 提高跟踪的准确度
-
+from fast_reid.fast_reid_interfece import FastReIDInterface  
 from yolox.utils.visualize import plot_tracking,plot_tracking_custom,plot_tracking_customRG,plot_tracking_custom1,plot_tracking_customT
 
 
