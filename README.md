@@ -20,8 +20,7 @@
 - [ ] Deployment code.
 
 ## Abstract
-
-The goal of multi-object tracking (MOT) is detecting and tracking all the objects in a scene, while keeping a unique identifier for each object.
+Multi-object tracking (MOT) aims to estimate object bounding boxes and identities in videos. Existing methods often struggle with occlusion and insufficient use of detection information, leading to trajectory fragmentation and identity switches. In this paper, we propose ROT-SORT, a robust and adaptive tracking framework. ROT-SORT introduces an adaptive thresholding strategy for global greedy matching to handle occlusions dynamically, improving flexibility and accuracy. It also employs an extended trajectory method to link remaining and emerging targets with high-scoring detections, enhancing detection utilization and tracking continuity. 
 
 
 ### Visualization results on MOT challenge set
