@@ -320,7 +320,7 @@ class STrack(BaseTrack):
 # embeding feature (将原始数据转化为具有固定长度的向量表示过程，该向量被称为，嵌入向量 或特征向量，嵌入向量的维度通常是预先定义好的，并且能够捕捉到原始数据的重要特征信息)
 
 class ROTSORT(object):
-    # 初始化函数，用于设置 BOTSORT 类的初始状态和参数。它接受两个参数： args 是一个包含算法参数对象， frame_rate 是视频的帧率 ，默认30帧/秒
+    # 初始化函数。它接受两个参数： args 是一个包含算法参数对象， frame_rate 是视频的帧率 ，默认30帧/秒
     def __init__(self, args, frame_rate=30):
 
         self.tracked_stracks = []  # type: list[STrack]  # 初始化一个空列表，存储当前跟踪的目标，已跟踪轨迹（STrack）
@@ -357,7 +357,7 @@ class ROTSORT(object):
         # 添加显示 轨迹和 检测框函数
     def update(self, output_results, img):
       #  print("特征图维度14 up:", img.shape)  #  (540, 960, 3) 方法中的 img 图像都是 [w,h,c] 正常图像
-      # BOT-Sort 方法中 img 图像类都是 [w,h,c] 正常图像，应该怎么处理这样的图像，能够增强，连续帧之间目标的关联性
+      # ROT-Sort 方法中 img 图像类都是 [w,h,c] 正常图像，应该怎么处理这样的图像，能够增强，连续帧之间目标的关联性
 
         self.frame_id += 1  # 将帧计数器加1，用于跟踪当前处理的帧数
         activated_starcks = [] # 初始化一个空列表，用于存储激活的轨迹（track）
