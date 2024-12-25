@@ -63,7 +63,7 @@ The code was tested using torch 1.11.0+cu113 and torchvision==0.12.0
 
 **Step 3.** Install RoT-SORT.
 ```shell
-git clone https://github.com/NirAharon/BoT-SORT.git
+git clone [https://github.com/wwwshengbo/ROT-SORT.git]
 
 
 pip3 install -r requirements.txt
